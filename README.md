@@ -1,29 +1,51 @@
-Airline DB & SQL Capstone Analysis
-1. Project Overview -
-This project analyzes AirlineDB, a comprehensive relational database covering flight bookings, ticketing, boarding passes, flight schedules, aircraft configurations, and airport data. Using advanced SQL queries, window functions, and complex joins, the project extracts key operational metrics, passenger trends, and flight performance insights.
+AirlineDB-SQL-Analytics
 
-2. Business Problem & Objectives -
-Airlines manage vast amounts of transactional and operational data across bookings, flights, and airports, making it challenging to extract actionable insights from raw schemas alone. The objective of this project is to write optimized SQL queries to answer critical business questions, including:  
-Booking & Ticketing Efficiency: Tracking ticket distribution and identifying missing check-ins or unutilized boarding passes.  
-Flight & Airport Performance: Ranking airports by outbound flight volume and analyzing flight schedules.  
-Data Transformation & Formatting: Standardizing date formats for accurate reporting and trend analysis.  
-Sales & Product Performance: Utilizing CTEs and window functions (like ⁠RANK()⁠) to evaluate top-performing products, stores, or routes on a quarterly and cumulative basis.
+1. Project Overview - 
+AirlineDB & Flight Operations Analytics is a comprehensive SQL-based project created to analyze airline bookings, flight schedules, ticketing data, passenger check-ins, aircraft configurations, and airport performance. The analysis provides a clear view of overall operational performance, route demand, booking trends, and passenger movement patterns.
 
-3. Key Analytical Queries & Features -
-The project solves multiple complex querying challenges, including:
-Ticket vs. Boarding Pass Analysis: Identifying tickets issued without corresponding boarding passes using ⁠LEFT JOIN⁠ logic.  
-Date Manipulation: Formatting timestamp and date fields into standard ⁠YYYY-MM-DD⁠ and ⁠YYYY-Q⁠ formats.  
-Advanced Ranking & Window Functions: Implementing ⁠RANK() OVER (PARTITION BY ... ORDER BY ...)⁠ to determine top performers across categories and regions.
+2. Business Problem -
+Airlines generate large volumes of complex relational data across bookings, flights, and airports, making it difficult to extract performance metrics and operational bottlenecks through raw tables alone. The objective of this project is to write structured SQL queries to transform raw relational data into meaningful insights, helping management understand:  
+ Booking patterns and total revenue generation.  
+ Flight delay frequencies and schedule statuses.  
+ Passenger check-in compliance and missing boarding passes.  
+ Airport traffic volume and regional route distribution.  
+ Quarterly sales performance and store/route rankings.
 
-4. Tools & Technologies -
-SQL: Advanced querying, Joins, Aggregations, Subqueries, CTEs (Common Table Expressions), and Window Functions.  
-Relational Database Management System (RDBMS): Working with interconnected tables (⁠bookings⁠, ⁠tickets⁠, ⁠ticket_flights⁠, ⁠flights⁠, ⁠airports_data⁠, ⁠aircrafts_data⁠, ⁠seats⁠, ⁠boarding_passes⁠).
-File Formats: ⁠.sql⁠ script files and documentation.
+3. Goal of the Analysis -
+The main goal is to use advanced SQL query techniques—including Joins, Aggregations, Subqueries, Common Table Expressions (CTEs), and Window Functions—to evaluate operational and financial performance. The analysis allows stakeholders to filter and explore insights regarding:  
+ Departure and Arrival Airports  
+ Booking Dates and Quarters  
+ Passenger and Ticket Categories  
+ Flight Status and Check-in Analytics
 
-5. Data Source & Schema -
-The relational database schema comprises multiple integrated tables:  
-bookings⁠: Stores booking references, dates, and total amounts.  
-⁠tickets⁠ & ⁠ticket_flights⁠: Contain passenger details, ticket numbers, flight segments, and fare conditions.  
-flights⁠: Tracks flight schedules, departure/arrival airports, aircraft codes, and statuses.  
-⁠airports_data⁠ & ⁠aircrafts_data⁠: Maintain airport metadata, coordinates, timezones, and aircraft model configurations.  
-⁠boarding_passes⁠ & ⁠seats⁠: Manage seat assignments and check-in verifications.
+5. Tools & Technologies -
+ SQL (PostgreSQL / MySQL): Advanced query writing, multi-table joins, and data extraction.  
+ CTEs & Window Functions: Utilizing ⁠WITH⁠ clauses, ⁠RANK()⁠, and ⁠PARTITION BY⁠ for ranking and comparative metrics.  
+ Date & String Formatting: Transforming timestamps using functions like ⁠TO_CHAR⁠ for standardized reporting.  
+ Relational Data Modeling: Managing primary-foreign key relationships across tables (⁠bookings⁠, ⁠tickets⁠, ⁠ticket_flights⁠, ⁠flights⁠, ⁠airports_data⁠, ⁠aircrafts_data⁠, ⁠seats⁠, ⁠boarding_passes⁠).  
+ File Formats: ⁠.sql⁠ script files containing optimized query solutions and documentation.
+ 
+6. Data Source -
+ Source: Relational database (⁠AirlineDB⁠) containing structured tables covering passenger details, booking references (⁠book_ref⁠), ticket numbers (⁠ticket_no⁠), scheduled departures, actual arrivals, aircraft models, and seat layouts.
+ 
+7. Features / Highlights - Key Metrics & Analysis -
+The SQL queries successfully extract the following key performance indicators and insights:
+ Flight Operations Analysis -
+ Total flight volume and route distribution.  
+ Airport traffic ranking based on outbound flights.  
+ Identification of unutilized seats and missing passenger check-ins.  
+ Booking & Revenue Trends -
+ Total booking amounts and ticket sales tracking.  
+ Quarterly sales comparison across operational hubs.  
+ Formatting booking dates into clean ⁠YYYY-MM-DD⁠ and ⁠YYYY-Q⁠ structures.  
+ Advanced Analytical Insights -
+ Identifying top-performing routes using ⁠RANK()⁠ window functions.  
+ Finding discrepancies between issued tickets and generated boarding passes via ⁠LEFT JOIN⁠ operations.  
+ Analyzing aircraft model distributions and cabin class seat configurations.
+
+8. Key Insights -
+The queries help uncover critical operational takeaways, including:
+ High-traffic hub airports driving the majority of flight departures.  
+ Seasonal trends and quarterly fluctuations in booking volumes.  
+ Discrepancies in passenger check-ins where tickets were booked but boarding passes were unissued.  
+ Effective revenue distribution across distinct fare conditions and aircraft classes.
