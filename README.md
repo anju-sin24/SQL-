@@ -30,7 +30,8 @@ The main goal is to use advanced SQL query techniques—including Joins, Aggrega
  
 6. Features / Highlights - Key Metrics & Analysis -
 The SQL queries successfully extract the following key performance indicators and insights:
-Flight Operations Analysis -
+
+ Flight Operations Analysis -
  - Total flight volume and route distribution.  
  - Airport traffic ranking based on outbound flights.  
  - Identification of unutilized seats and missing passenger check-ins.
