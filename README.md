@@ -18,32 +18,34 @@ The main goal is to use advanced SQL query techniques—including Joins, Aggrega
 * Passenger and Ticket Categories  
 * Flight Status and Check-in Analytics
 
-#4. Tools & Technologies -
+4. Tools & Technologies -
 * SQL (PostgreSQL / MySQL): Advanced query writing, multi-table joins, and data extraction.  
 * CTEs & Window Functions: Utilizing ⁠WITH⁠ clauses, ⁠RANK()⁠, and ⁠PARTITION BY⁠ for ranking and comparative metrics.  
 * Date & String Formatting: Transforming timestamps using functions like ⁠TO_CHAR⁠ for standardized reporting.  
 * Relational Data Modeling: Managing primary-foreign key relationships across tables (⁠bookings⁠, ⁠tickets⁠, ⁠ticket_flights⁠, ⁠flights⁠, ⁠airports_data⁠, ⁠aircrafts_data⁠, ⁠seats⁠, ⁠boarding_passes⁠).  
 * File Formats: ⁠.sql⁠ script files containing optimized query solutions and documentation.
  
-#5. Data Source -
+5. Data Source -
 * Source: Relational database (⁠AirlineDB⁠) containing structured tables covering passenger details, booking references (⁠book_ref⁠), ticket numbers (⁠ticket_no⁠), scheduled departures, actual arrivals, aircraft models, and seat layouts.
  
-#6. Features / Highlights - Key Metrics & Analysis -
+6. Features / Highlights - Key Metrics & Analysis -
 The SQL queries successfully extract the following key performance indicators and insights:
  Flight Operations Analysis -
  - Total flight volume and route distribution.  
  - Airport traffic ranking based on outbound flights.  
- - Identification of unutilized seats and missing passenger check-ins.  
+ - Identification of unutilized seats and missing passenger check-ins.
+   
  Booking & Revenue Trends -
  - Total booking amounts and ticket sales tracking.  
  - Quarterly sales comparison across operational hubs.  
- - Formatting booking dates into clean ⁠YYYY-MM-DD⁠ and ⁠YYYY-Q⁠ structures.  
+ - Formatting booking dates into clean ⁠YYYY-MM-DD⁠ and ⁠YYYY-Q⁠ structures.
+   
  Advanced Analytical Insights -
  - Identifying top-performing routes using ⁠RANK()⁠ window functions.  
  - Finding discrepancies between issued tickets and generated boarding passes via ⁠LEFT JOIN⁠ operations.  
  - Analyzing aircraft model distributions and cabin class seat configurations.
 
-#7. Key Insights -
+7. Key Insights -
 The queries help uncover critical operational takeaways, including:
 * High-traffic hub airports driving the majority of flight departures.  
 * Seasonal trends and quarterly fluctuations in booking volumes.  
