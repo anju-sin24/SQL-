@@ -50,5 +50,9 @@ The SQL queries successfully extract the following key performance indicators an
 The queries help uncover critical operational takeaways, including:
 * High-traffic hub airports driving the majority of flight departures.  
 * Seasonal trends and quarterly fluctuations in booking volumes.  
-* Discrepancies in passenger check-ins where tickets were booked but boarding passes were unissued.  
+* Discrepancies in passenger check-ins where tickets were booked but boarding passes were unissued.
 * Effective revenue distribution across distinct fare conditions and aircraft classes.
+  
+9. Queries Overview -
+  https://github.com/anju-sin24/SQL-Airline-Database-Retail-Operations/blob/main/SQL_queries.zip
+
